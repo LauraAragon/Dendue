@@ -3,4 +3,11 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_mapa">mapa</string>
+    <string name="title_activity_reto_uno">RetoUno</string>
+    <string name="title_activity_reto_dos">RetoDos</string>
+    <string name="title_activity_reto_tres">RetoTres</string>
+    <string name="title_activity_reto_cuatro">RetoCuatro</string>
+    <string name="title_activity_reto_cinco">RetoCinco</string>
+    <string name="title_activity_reto_seis">RetoSeis</string>
 </resources>

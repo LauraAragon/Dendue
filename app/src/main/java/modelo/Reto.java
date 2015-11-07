@@ -1,5 +1,7 @@
 package modelo;
 
+import java.util.ArrayList;
+
 /**
  * Created by Laura Aragon on 27/10/2015.
  */
@@ -7,27 +9,25 @@ public class Reto {
     public static final int PALABRA = 1;
     public static final int SILABA = 2;
     public static final int LETRA = 3;
-    private int tipo;
     private int id;
-    private String instrucciones;
+    private int tipo;
     private int intentos;
+    private boolean completado;
     private String fraseHistoria;
     private Medalla medalla;
     private Palabra palabra;
+    private ArrayList<String> erroneas;
 
 
-    public Reto(int tipo, int id, String instrucciones, int intentos, String fraseHistoria){
-        this.tipo = tipo;
+    public Reto(int id, int tipo, boolean completado, int intentos, String fraseHistoria){
         this.id = id;
-        this.instrucciones = instrucciones;
+        this.tipo = tipo;
         this.intentos = intentos;
+        this.completado = completado;
         this.fraseHistoria = fraseHistoria;
         this.medalla = null;
         this.palabra = null;
-    }
-
-    public void logicaFuncional(){
-
+        erroneas = new ArrayList<String>();
     }
 
     public int getTipo() {
@@ -44,14 +44,6 @@ public class Reto {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getInstrucciones() {
-        return instrucciones;
-    }
-
-    public void setInstrucciones(String instrucciones) {
-        this.instrucciones = instrucciones;
     }
 
     public int getIntentos() {
@@ -86,4 +78,11 @@ public class Reto {
         this.palabra = palabra;
     }
 
+    public ArrayList<String> getErroneas() {
+        return erroneas;
+    }
+
+    public void setErroneas(ArrayList<String> erroneas) {
+        this.erroneas = erroneas;
+    }
 }

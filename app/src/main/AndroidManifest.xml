@@ -8,13 +8,41 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.lauraaragon.com.lauraaragon.dendue.Inicio"
+            android:name="com.lauraaragon.dendue.StartActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lauraaragon.dendue.MapActivity"
+            android:label="@string/title_activity_mapa" >
+        </activity>
+        <activity
+            android:name="com.lauraaragon.dendue.ChallengeOneActivity"
+            android:label="@string/title_activity_reto_uno" >
+        </activity>
+        <activity
+            android:name="com.lauraaragon.dendue.ChallengeTwoActivity"
+            android:label="@string/title_activity_reto_dos" >
+        </activity>
+        <activity
+            android:name="com.lauraaragon.dendue.ChallengeThreeActivity"
+            android:label="@string/title_activity_reto_tres" >
+        </activity>
+        <activity
+            android:name="com.lauraaragon.dendue.ChallengeFourActivity"
+            android:label="@string/title_activity_reto_cuatro" >
+        </activity>
+        <activity
+            android:name="com.lauraaragon.dendue.ChallengeFiveActivity"
+            android:label="@string/title_activity_reto_cinco" >
+        </activity>
+        <activity
+            android:name="com.lauraaragon.dendue.ChallengeSixActivity"
+            android:label="@string/title_activity_reto_seis" >
         </activity>
     </application>
 

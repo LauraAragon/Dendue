@@ -1,36 +1,34 @@
 package modelo;
 
+import java.util.ArrayList;
+
 /**
  * Created by Laura Aragon on 27/10/2015.
  */
 public class Palabra {
     private String palabra;
-    private int cantidadSilabas;
-    private int cantidadLetras;
-    private Silaba[] silabas;
-    private Letra[] letras;
+    private ArrayList<Silaba> silabas;
+    private ArrayList<Letra> letras;
 
-    public Palabra(String palabra, int cantidadSilabas, int cantidadLetra){
+    public Palabra(String palabra){
         this.palabra = palabra;
-        this.cantidadSilabas = cantidadSilabas;
-        this.cantidadLetras = cantidadLetra;
-        silabas = new Silaba[cantidadSilabas];
-        letras = new Letra[cantidadLetras];
+        silabas = new ArrayList<Silaba>();
+        letras = new ArrayList<Letra>();
     }
 
-    public Silaba[] getSilabas() {
+    public ArrayList<Silaba> getSilabas() {
         return silabas;
     }
 
-    public void setSilabas(Silaba[] silabas) {
+    public void setSilabas(ArrayList<Silaba> silabas) {
         this.silabas = silabas;
     }
 
-    public Letra[] getLetras() {
+    public ArrayList<Letra> getLetras() {
         return letras;
     }
 
-    public void setLetras(Letra[] letras) {
+    public void setLetras(ArrayList<Letra> letras) {
         this.letras = letras;
     }
 
@@ -40,21 +38,5 @@ public class Palabra {
 
     public void setPalabra(String palabra) {
         this.palabra = palabra;
-    }
-
-    public int getCantidadSilabas() {
-        return cantidadSilabas;
-    }
-
-    public void setCantidadSilabas(int cantidadSilabas) {
-        this.cantidadSilabas = cantidadSilabas;
-    }
-
-    public int getCantidadLetras() {
-        return cantidadLetras;
-    }
-
-    public void setCantidadLetras(int cantidadLetras) {
-        this.cantidadLetras = cantidadLetras;
     }
 }

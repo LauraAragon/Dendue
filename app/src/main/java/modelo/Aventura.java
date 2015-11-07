@@ -1,17 +1,21 @@
 package modelo;
 
+import java.io.Serializable;
+
 /**
  * Created by Laura Aragon on 27/10/2015.
  */
 public class Aventura {
+    private int id;
     private String nombre;
-    private String historia;
+    private String[] historia;
     private boolean historiaDesbloqueada;
     private Reto[] retos;
 
-    public Aventura(){
-        this.nombre = "";
-        this.historia = "";
+    public Aventura(int id, String nombre)     {
+        this.id = id;
+        this.nombre = nombre;
+        historia = new String[6];
         this.historiaDesbloqueada = false;
         this.retos = new Reto[6];
     }
@@ -24,11 +28,11 @@ public class Aventura {
         this.nombre = nombre;
     }
 
-    public String getHistoria() {
+    public String[] getHistoria() {
         return historia;
     }
 
-    public void setHistoria(String historia) {
+    public void setHistoria(String[] historia) {
         this.historia = historia;
     }
 
@@ -47,4 +51,5 @@ public class Aventura {
     public void setRetos(Reto[] retos) {
         this.retos = retos;
     }
+
 }

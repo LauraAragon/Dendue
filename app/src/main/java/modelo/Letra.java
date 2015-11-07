@@ -4,12 +4,15 @@ package modelo;
  * Created by Laura Aragon on 27/10/2015.
  */
 public class Letra {
-    private char letra;
     private int posicion;
+    private char letra;
+    private int posicionSilaba;
 
-    public Letra(char letra, int posicion){
+
+    public Letra(int posicion, char letra, int posicionSilaba){
         this.letra = letra;
         this.posicion = posicion;
+        this.posicionSilaba = posicionSilaba;
     }
 
     public char getLetra() {
@@ -26,5 +29,13 @@ public class Letra {
 
     public void setPosicion(int posicion) {
         this.posicion = posicion;
+    }
+
+    public int getPosicionSilaba() {
+        return posicionSilaba;
+    }
+
+    public void setPosicionSilaba(int posicionSilaba) {
+        this.posicionSilaba = posicionSilaba;
     }
 }

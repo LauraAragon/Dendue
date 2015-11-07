@@ -1,22 +1,25 @@
-package com.example.lauraaragon.dendue;
+package com.lauraaragon.dendue;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Inicio extends AppCompatActivity {
+import com.example.lauraaragon.dendue.R;
+
+public class ChallengeThreeActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inicio);
+        setContentView(R.layout.activity_challenge_three);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_inicio, menu);
+        getMenuInflater().inflate(R.menu.menu_challenge_three, menu);
         return true;
     }
 
