@@ -232,7 +232,7 @@ public class AdminBD {
         return aplicacion;
     }
 
-    public static void actualizarMedallaReto(int idReto, int idAventura, int tipoMedalla, int intentos){
+    public static void actualizarReto(int idReto, int idAventura, int tipoMedalla, int intentos){
         ContentValues cv = new ContentValues();
         cv.put(DendueContractClass.ColumnRetos.TIPO_MEDALLA_RETO, tipoMedalla);
         cv.put(DendueContractClass.ColumnRetos.COMPLETADO_RETO, 1);

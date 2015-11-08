@@ -1,11 +1,12 @@
 package modelo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by Laura Aragon on 27/10/2015.
  */
-public class Palabra {
+public class Palabra implements Serializable{
     private String palabra;
     private ArrayList<Silaba> silabas;
     private ArrayList<Letra> letras;

@@ -1,9 +1,11 @@
 package modelo;
 
+import java.io.Serializable;
+
 /**
  * Created by Laura Aragon on 27/10/2015.
  */
-public class Medalla {
+public class Medalla implements Serializable {
     public static final int NINGUNA = 0;
     public static final int ORO = 1;
     public static final int PLATA = 2;

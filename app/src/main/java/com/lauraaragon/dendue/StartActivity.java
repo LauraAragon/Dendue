@@ -11,25 +11,28 @@ import android.widget.Button;
 
 import com.example.lauraaragon.dendue.R;
 
+import modelo.Aplicacion;
+
 public class StartActivity extends Activity {
 
     private Button btnJugar;
+    public  Aplicacion aplicacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
+        AdminBD bd = new AdminBD(this);
+        aplicacion = bd.getAplicacion();
         btnJugar = (Button) findViewById(R.id.btnJugar);
         btnJugar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(StartActivity.this, MapActivity.class);
+                intent.putExtra("Aplicacion", aplicacion);
                 startActivity(intent);
             }
         });
-
-        AdminBD bd = new AdminBD(this);
-
     }
 
     @Override

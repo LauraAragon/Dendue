@@ -1,9 +1,11 @@
 package modelo;
 
+import java.io.Serializable;
+
 /**
  * Created by Laura Aragon on 27/10/2015.
  */
-public class Silaba {
+public class Silaba implements Serializable{
     private String silaba;
     private int posicion;
 

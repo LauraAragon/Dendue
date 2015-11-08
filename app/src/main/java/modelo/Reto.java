@@ -1,11 +1,12 @@
 package modelo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by Laura Aragon on 27/10/2015.
  */
-public class Reto {
+public class Reto implements Serializable{
     public static final int PALABRA = 1;
     public static final int SILABA = 2;
     public static final int LETRA = 3;

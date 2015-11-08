@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Created by Laura Aragon on 27/10/2015.
  */
-public class Aventura {
+public class Aventura implements Serializable {
     private int id;
     private String nombre;
     private String[] historia;

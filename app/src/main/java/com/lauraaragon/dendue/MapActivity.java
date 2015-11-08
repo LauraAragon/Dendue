@@ -10,6 +10,10 @@ import android.widget.Button;
 
 import com.example.lauraaragon.dendue.R;
 
+import modelo.Aplicacion;
+import modelo.Aventura;
+import modelo.Reto;
+
 public class MapActivity extends Activity {
 
     private Button btnRetoUno;
@@ -18,7 +22,7 @@ public class MapActivity extends Activity {
     private Button btnRetoCuatro;
     private Button btnRetoCinco;
     private Button btnRetoSeis;
-    private DataBaseOpenHelper dBHelper;
+    public Aplicacion aplicacion;
 
 
 
@@ -26,12 +30,16 @@ public class MapActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
-        //dBHelper = new DataBaseOpenHelper(getContext());
+        aplicacion = getIntent().getExtras().getParcelable("Aplicacion");
         btnRetoUno = (Button) findViewById(R.id.btnRetoUno);
         btnRetoUno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Aventura aventura = aplicacion.getAventuras().get(0);
+                Reto[] retos = aventura.getRetos();
+                Reto reto = retos[0];
                 Intent intent = new Intent(MapActivity.this, ChallengeOneActivity.class);
+                intent.putExtra("Reto", reto);
                 startActivity(intent);
             }
         });
@@ -41,7 +49,12 @@ public class MapActivity extends Activity {
         btnRetoDos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MapActivity.this, ChallengeTwoActivity.class);
+
+                Aventura aventura = aplicacion.getAventuras().get(0);
+                Reto[] retos = aventura.getRetos();
+                Reto reto = retos[1];
+                Intent intent = new Intent(MapActivity.this, ChallengeOneActivity.class);
+                intent.putExtra("Reto", reto);
                 startActivity(intent);
             }
         });
@@ -51,7 +64,11 @@ public class MapActivity extends Activity {
         btnRetoTres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MapActivity.this, ChallengeThreeActivity.class);
+                Aventura aventura = aplicacion.getAventuras().get(0);
+                Reto[] retos = aventura.getRetos();
+                Reto reto = retos[2];
+                Intent intent = new Intent(MapActivity.this, ChallengeOneActivity.class);
+                intent.putExtra("Reto", reto);
                 startActivity(intent);
             }
         });
@@ -61,7 +78,11 @@ public class MapActivity extends Activity {
         btnRetoCuatro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MapActivity.this, ChallengeFourActivity.class);
+                Aventura aventura = aplicacion.getAventuras().get(0);
+                Reto[] retos = aventura.getRetos();
+                Reto reto = retos[3];
+                Intent intent = new Intent(MapActivity.this, ChallengeOneActivity.class);
+                intent.putExtra("Reto", reto);
                 startActivity(intent);
             }
         });
@@ -71,7 +92,11 @@ public class MapActivity extends Activity {
         btnRetoCinco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MapActivity.this, ChallengeFiveActivity.class);
+                Aventura aventura = aplicacion.getAventuras().get(0);
+                Reto[] retos = aventura.getRetos();
+                Reto reto = retos[4];
+                Intent intent = new Intent(MapActivity.this, ChallengeOneActivity.class);
+                intent.putExtra("Reto", reto);
                 startActivity(intent);
             }
         });
@@ -81,7 +106,11 @@ public class MapActivity extends Activity {
         btnRetoSeis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MapActivity.this, ChallengeSixActivity.class);
+                Aventura aventura = aplicacion.getAventuras().get(0);
+                Reto[] retos = aventura.getRetos();
+                Reto reto = retos[5];
+                Intent intent = new Intent(MapActivity.this, ChallengeOneActivity.class);
+                intent.putExtra("Reto", reto);
                 startActivity(intent);
             }
         });

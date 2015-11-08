@@ -1,9 +1,11 @@
 package modelo;
 
+import java.io.Serializable;
+
 /**
  * Created by Laura Aragon on 27/10/2015.
  */
-public class Letra {
+public class Letra implements Serializable {
     private int posicion;
     private char letra;
     private int posicionSilaba;

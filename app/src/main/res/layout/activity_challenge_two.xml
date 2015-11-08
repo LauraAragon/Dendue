@@ -12,7 +12,9 @@
         android:id="@+id/btnPalabraUno"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:enabled="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -20,7 +22,9 @@
         android:id="@+id/btnPalabraDos"
         android:layout_alignBottom="@+id/btnPalabraUno"
         android:layout_toRightOf="@+id/btnPalabraUno"
-        android:layout_toEndOf="@+id/btnPalabraUno" />
+        android:layout_toEndOf="@+id/btnPalabraUno"
+        android:enabled="true"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -28,7 +32,9 @@
         android:id="@+id/btnPalabraTres"
         android:layout_alignBottom="@+id/btnPalabraDos"
         android:layout_toRightOf="@+id/btnPalabraDos"
-        android:layout_toEndOf="@+id/btnPalabraDos" />
+        android:layout_toEndOf="@+id/btnPalabraDos"
+        android:enabled="true"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -36,7 +42,9 @@
         android:id="@+id/btnPalabraCuatro"
         android:layout_alignBottom="@+id/btnPalabraTres"
         android:layout_toRightOf="@+id/btnPalabraTres"
-        android:layout_toEndOf="@+id/btnPalabraTres" />
+        android:layout_toEndOf="@+id/btnPalabraTres"
+        android:enabled="true"
+        android:clickable="true" />
 
     <TextView
         android:layout_width="wrap_content"
