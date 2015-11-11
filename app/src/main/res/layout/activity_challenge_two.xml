@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fnd_act_dos"
+    android:weightSum="1">
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/barra"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="El"
+        android:id="@+id/fraseU"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:singleLine="true"
+        android:textIsSelectable="false"
+        android:textSize="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#616161" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="bosque"
+            android:id="@+id/fraseD"
+            android:singleLine="true"
+            android:textIsSelectable="false"
+            android:textSize="30dp"
+            android:textColor="#616161"
+            android:layout_alignTop="@+id/fraseU"
+            android:layout_toRightOf="@+id/fraseU"
+            android:layout_toEndOf="@+id/fraseU"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="es"
+            android:id="@+id/fraseT"
+            android:singleLine="true"
+            android:textIsSelectable="false"
+            android:textSize="30dp"
+            android:textColor="#616161"
+            android:layout_alignTop="@+id/fraseD"
+            android:layout_toRightOf="@+id/fraseD"
+            android:layout_toEndOf="@+id/fraseD"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="hermoso"
+            android:id="@+id/fraseC"
+            android:singleLine="true"
+            android:textIsSelectable="false"
+            android:textSize="30dp"
+            android:textColor="#616161"
+            android:layout_alignTop="@+id/fraseT"
+            android:layout_toRightOf="@+id/fraseT"
+            android:layout_toEndOf="@+id/fraseT"
+            android:layout_marginLeft="10dp" />
+
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Hay"
+            android:id="@+id/opcU_palabraU"
+            android:textColor="#003139"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/opcU_palabraD"
+            android:layout_toStartOf="@+id/opcU_palabraD"
+            android:background="@null" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="flores"
+            android:id="@+id/opcU_palabraD"
+            android:textColor="#003139"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/opcU_palabraT"
+            android:layout_toStartOf="@+id/opcU_palabraT"
+            android:background="@null" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="en"
+            android:id="@+id/opcU_palabraT"
+            android:textColor="#003139"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/opcU_palabraC"
+            android:layout_toStartOf="@+id/opcU_palabraC"
+            android:background="@null" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="el"
+            android:id="@+id/opcU_palabraC"
+            android:textColor="#003139"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/fraseC"
+            android:layout_alignStart="@+id/fraseC"
+            android:background="@null" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="campo"
+            android:id="@+id/opcU_palabraCi"
+            android:textColor="#003139"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/opcU_palabraC"
+            android:layout_toEndOf="@+id/opcU_palabraC"
+            android:background="@null" />
+    </RelativeLayout>
+</LinearLayout>
