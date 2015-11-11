@@ -1,16 +1,51 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.lauraaragon.dendue.ChallengeFourActivity">
+    android:layout_height="match_parent"
+    tools:context="com.lauraaragon.dendue.ChallengeFourActivity"
+    android:orientation="vertical"
+    android:contextClickable="false"
+    android:background="@drawable/fnd_act_cuatro"
+    >
 
-    <TextView
+    <include
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Este es el RETO CUATRO"
-        android:id="@+id/textView3"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-</RelativeLayout>
+        layout="@layout/barra" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <GridLayout
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:rowCount="4"
+            android:columnCount="3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="75dp"
+                android:id="@+id/dienteU"
+                android:layout_marginRight="71dp"
+                android:layout_marginEnd="71dp"
+                android:layout_marginBottom="145dp"
+                android:background="@drawable/diente"
+                android:text="PA"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="gravity"
+                android:gravity="center|top"
+                android:layout_row="0"
+                android:layout_column="1"/>
+
+        </GridLayout>
+
+    </RelativeLayout>
+</LinearLayout>

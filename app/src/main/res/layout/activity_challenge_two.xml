@@ -1,89 +1,131 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fnd_act_dos"
+    android:weightSum="1"
     tools:context="com.lauraaragon.dendue.ChallengeTwoActivity">
 
-    <Button
+    <include
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnPalabraUno"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:clickable="true"
-        android:enabled="true" />
+        layout="@layout/barra"
+        android:layout_gravity="center_horizontal" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnPalabraDos"
-        android:layout_alignBottom="@+id/btnPalabraUno"
-        android:layout_toRightOf="@+id/btnPalabraUno"
-        android:layout_toEndOf="@+id/btnPalabraUno"
-        android:enabled="true"
-        android:clickable="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnPalabraTres"
-        android:layout_alignBottom="@+id/btnPalabraDos"
-        android:layout_toRightOf="@+id/btnPalabraDos"
-        android:layout_toEndOf="@+id/btnPalabraDos"
-        android:enabled="true"
-        android:clickable="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="EL"
+            android:id="@+id/textViewOneChallengeTwo"
+            android:singleLine="true"
+            android:textIsSelectable="false"
+            android:textSize="30dp"
+            android:textColor="#616161"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnPalabraCuatro"
-        android:layout_alignBottom="@+id/btnPalabraTres"
-        android:layout_toRightOf="@+id/btnPalabraTres"
-        android:layout_toEndOf="@+id/btnPalabraTres"
-        android:enabled="true"
-        android:clickable="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="BOSQUE"
+            android:id="@+id/textViewTwoChallengeTwo"
+            android:singleLine="true"
+            android:textIsSelectable="false"
+            android:textSize="30dp"
+            android:textColor="#616161"
+            android:layout_alignTop="@+id/textViewOneChallengeTwo"
+            android:layout_toRightOf="@+id/textViewOneChallengeTwo"
+            android:layout_toEndOf="@+id/textViewOneChallengeTwo"
+            android:layout_marginLeft="10dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="EL"
-        android:id="@+id/textViewOneChallengeTwo"
-        android:layout_toEndOf="@+id/btnPalabraUno"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="@dimen/abc_text_size_large_material" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ES"
+            android:id="@+id/textViewThreeChallengeTwo"
+            android:singleLine="true"
+            android:textIsSelectable="false"
+            android:textSize="30dp"
+            android:textColor="#616161"
+            android:layout_alignTop="@+id/textViewTwoChallengeTwo"
+            android:layout_toRightOf="@+id/textViewTwoChallengeTwo"
+            android:layout_toEndOf="@+id/textViewTwoChallengeTwo"
+            android:layout_marginLeft="10dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BOSQUE"
-        android:id="@+id/textViewTwoChallengeTwo"
-        android:textSize="@dimen/abc_text_size_large_material"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/btnPalabraUno"
-        android:layout_toEndOf="@+id/btnPalabraUno" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="HERMOSO"
+            android:id="@+id/textViewFourChallengeTwo"
+            android:singleLine="true"
+            android:textIsSelectable="false"
+            android:textSize="30dp"
+            android:textColor="#616161"
+            android:layout_alignTop="@+id/textViewThreeChallengeTwo"
+            android:layout_toRightOf="@+id/textViewThreeChallengeTwo"
+            android:layout_toEndOf="@+id/textViewThreeChallengeTwo"
+            android:layout_marginLeft="10dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ES"
-        android:id="@+id/textViewThreeChallengeTwo"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/btnPalabraDos"
-        android:layout_toEndOf="@+id/btnPalabraDos"
-        android:textSize="22sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="HERMOSO"
-        android:id="@+id/textViewFourChallengeTwo"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/textViewThreeChallengeTwo"
-        android:textSize="22sp"
-        android:layout_toRightOf="@+id/textViewThreeChallengeTwo" />
-</RelativeLayout>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/btnPalabraUno"
+            android:textColor="#003139"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/btnPalabraDos"
+            android:layout_toStartOf="@+id/btnPalabraDos"
+            android:background="@null" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/btnPalabraDos"
+            android:textColor="#003139"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/btnPalabraTres"
+            android:layout_toStartOf="@+id/btnPalabraTres"
+            android:background="@null" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/btnPalabraTres"
+            android:textColor="#003139"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/btnPalabraCuatro"
+            android:layout_toStartOf="@+id/btnPalabraCuatro"
+            android:background="@null" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/btnPalabraCuatro"
+            android:textColor="#003139"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/textViewFourChallengeTwo"
+            android:layout_alignStart="@+id/textViewFourChallengeTwo"
+            android:background="@null" />
+    </RelativeLayout>
+</LinearLayout>
