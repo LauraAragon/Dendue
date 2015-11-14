@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ganar"
+        android:src="@drawable/ganar" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_map"
+        android:layout_marginBottom="177dp"
+        android:background="@null"
+        android:src="@drawable/btn_mapa"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY" />
+</RelativeLayout>
